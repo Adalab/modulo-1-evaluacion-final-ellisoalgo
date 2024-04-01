@@ -1,0 +1,105 @@
+.insomnia {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 60px;
+    padding-bottom: 45px;
+
+    &__subtitle{
+        font-family: var(--textstyle);
+        font-size: 14px;
+        color: var(--subtitle);
+        margin-bottom: 10px;
+
+        @media screen and (width > 768px) {
+        }
+    
+        @media screen and (width > 1280px) {
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+
+    &__title{
+        font-family: var(--titlestyle);
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 20px;
+
+        @media screen and (width > 768px) {
+            font-size: 26px;
+            line-height: 45px;
+            margin-bottom: 27px;
+        }
+    
+        @media screen and (width > 1280px) {
+            font-size: 32px;
+            line-height: 45px;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__text{
+        font-family: var(--textstyle);
+        font-size: 18px;
+        line-height: 30px;
+        color: #4a4a4a;
+        margin-bottom: 27px;
+        
+
+        @media screen and (width > 768px) {
+            font-size: 20px;
+        }
+    
+        @media screen and (width > 1280px) {
+        }
+    }
+
+    &__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 45px;
+
+        width: 76px;
+        height: 45px;
+        border-radius: 22.5px;
+        border: 2px solid var(--button);
+
+        font-family: var(--textstyle);
+        font-size: 20px;
+        text-decoration: none;
+        color: var(--button);
+
+        background: transparent;
+        transition:all 0.5s ease;
+
+        &:hover{
+            background-color: var(--button);
+            color: #ffffff;
+            border-radius: 0;
+        }
+
+        @media screen and (width > 768px) {
+            width: 91px;
+            margin-bottom: 60px;
+        }
+    
+        @media screen and (width > 1280px) {
+            width: 160px;
+        }
+    }
+
+    @media screen and (width > 768px) {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    @media screen and (width > 1280px) {
+        padding-left: 275px;
+        padding-right: 275px;
+    }
+}

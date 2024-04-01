@@ -1,0 +1,115 @@
+.reasons{
+
+    background-color: #eff9ff;
+    padding-top: 29px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 60px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65px 139px 139px 139px;
+    justify-items: center;
+
+    &__title{
+        font-family: var(--titlestyle);
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+
+        @media screen and (width > 768px) {
+            font-size: 26px;
+            line-height: 45px;
+            grid-column: span 3;
+        }
+        
+        @media screen and (width > 1280px) {
+            font-size: 32px;
+        }
+    }
+
+    &__article{
+
+        &--title{
+            font-family: var(--titlestyle);
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            width: 184px;
+
+            @media screen and (width > 768px) {
+                font-size: 24px;
+                width: auto;
+                margin-bottom: 18px;
+            }
+        }
+
+        &--text{
+            font-family: var(--textstyle);
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            width: 184px;  
+
+            @media screen and (width > 768px) {
+                font-size: 20px;
+                width: auto;
+            }
+        }
+
+    }
+
+    &__button{
+        text-decoration: none;
+        background-color: var(--button);
+        width: 184px;
+        height: 45px;
+        border-radius: 22.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: #ffffff;
+        font-family: "Roboto Medium", sans-serif;
+        font-size: 20px;
+        line-height: 45px;
+
+        transition: all 0.5s ease-in-out;
+
+        &:hover{
+            background-color: transparent;
+            border: 2px solid var(--button);
+            border-radius: 0;
+            color: var(--button);
+        }
+
+        @media screen and (width > 768px) {
+            grid-column: 1/4;
+            width: 210px;
+
+        }
+        
+        @media screen and (width > 1280px) {
+            width: 225px;
+        }
+    }
+
+    @media screen and (width > 768px) {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 36px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 83px 173px 45px;
+        column-gap: 30px;
+    }
+
+    @media screen and (width > 1280px) {
+        padding-left: 85px;
+        padding-right: 85px;
+        padding-top: 60px;
+    }
+}
